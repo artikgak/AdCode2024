@@ -26,4 +26,4 @@ main = do
     hClose handle
 
 getEnabledParts :: String -> String
-getEnabledParts x = concatMap (head) $ map (splitOn "don't()") $ splitOn "do()" x
+getEnabledParts = concatMap head . map (splitOn "don't()") . splitOn "do()"
