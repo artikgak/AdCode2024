@@ -1,4 +1,4 @@
-module Task1 where
+module Task4 where
 
 import System.IO
 import Data.List.Split
